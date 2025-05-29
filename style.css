@@ -27,4 +27,20 @@ header{
     justify-content: space-between;
     padding-bottom: 24px;
 }
+/*section-1 config*/
+
+#section-1{
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+h1{
+    font-size: 40px;
+    letter-spacing: -1px;
+}
+#section-1 p,
+#section-5 p{
+    font-size: 18px;
+    line-height: 28px;
+}
 
