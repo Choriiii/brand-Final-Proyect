@@ -125,5 +125,28 @@ h1{
     line-height: 48px;
 }
 
+/*footer config*/
 
+footer{
+    background-color: black;
+    color: white;
+    padding: 50px 30px;
+}
+#footer-columns{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 30px;
+}
+footer h4{
+    margin-top: 16px;
+    line-height: 24px;
+}
+footer p{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+    line-height: 20px;
+}
 
