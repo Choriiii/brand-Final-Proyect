@@ -91,4 +91,20 @@ h1{
     line-height: 24px;
 }
 
+/*section 5 config*/
+
+#section-5{
+    padding: 30px 24px;
+    overflow-x: auto;
+    white-space: inherit;
+}
+#section-5 div{
+    width: 327px;
+    height: 344px;
+    background-color: rgba(243, 243, 243, 1);
+}
+#section-5 h4{
+    font-size: 16px;
+} 
+
 
