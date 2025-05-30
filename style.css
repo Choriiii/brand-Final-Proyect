@@ -107,4 +107,23 @@ h1{
     font-size: 16px;
 } 
 
+/*section 6 config*/
+
+#section-6{
+    background-image: url(Images/img-3.svg);
+    height: 500px;
+    color: white;
+    padding: 0px 64px;
+}
+#section-6 div{
+    position: relative;
+    top: 134px;
+    
+}
+#section-6 h2{
+    font-size: 28px;
+    line-height: 48px;
+}
+
+
 
