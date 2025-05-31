@@ -73,8 +73,7 @@ h1{
 
 /*section-2 config*/
 #section-2 img{
-    height: 309px;
-    
+   border-radius: 12px;
 }
 /*section-3 config*/
 #section-3 p,
@@ -103,6 +102,9 @@ h1{
     flex-direction: column;
     gap: 14px;
     padding: 24px;
+}
+#section-4 img{
+    border-radius: 12px;
 }
 #text-s-4{
     display: flex;
@@ -143,10 +145,12 @@ h1{
 /*section 6 config*/
 
 #section-6{
-    background-image: url(Images/img-3.svg);
+    background-image: url(Images/img-3-mobil.svg);
     height: 500px;
     color: white;
     padding: 0px 64px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #section-6 div{
     position: relative;
