@@ -29,6 +29,25 @@ header{
     justify-content: space-between;
     padding: 22px;
 }
+
+/*side bar config*/
+#side-bar{
+    position: absolute;
+    left: -100vh;
+    background-color: white;
+    width: 100vh;
+    height: 100vh;
+    text-decoration: none;
+    
+}
+#side-bar li{
+    list-style: none;
+    margin: 30px 25px;
+}
+#checkbox:checked ~ #side-bar{
+    left: 0; 
+    transition: all 0.5s;
+}
 /*section-1 config*/
 
 #section-1{
@@ -106,12 +125,16 @@ h1{
 #section-5{
     padding: 30px 24px;
     overflow-x: auto;
-    white-space: inherit;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
 }
-#section-5 div{
+.reviews{
+    flex: 0 0 auto;   
     width: 327px;
     height: 344px;
     background-color: rgba(243, 243, 243, 1);
+    border: 1px solid black;
 }
 #section-5 h4{
     font-size: 16px;
