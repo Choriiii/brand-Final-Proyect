@@ -134,17 +134,45 @@ h1{
     flex-direction: row;
     gap: 40px;
 }
+#section-5 h4{
+    font-size: 16px;
+} 
+/*reviews config*/
 .reviews{
     flex: 0 0 auto;   
     width: 327px;
     height: 344px;
     background-color: rgba(243, 243, 243, 1);
     border: 1px solid black;
+    padding: 24px;
+    position: relative;
+    
 }
-#section-5 h4{
-    font-size: 16px;
-} 
-
+.reviews img{
+    margin-bottom: 16px;
+}
+.reviews div,
+.reviews div p,
+.reviews div h4{
+    text-align: left;
+}
+.reviews div p{
+    font-size: 14px;
+}
+.Second-div{
+    position: absolute;
+    top: 192px;
+}
+.icon-1{
+    position: absolute;
+    left: 231px;
+    top: 112px;
+}
+.icon-2{
+    position: absolute;
+    left: 263px;
+    top: 112px;
+}
 /*section 6 config*/
 
 #section-6{
