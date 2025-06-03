@@ -14,47 +14,52 @@
 
 <body>
     <header>
-        <img src="../Images/Logo.svg" alt="Logo">
-        <div id="big-menu" style="display: none;">
+        <!-- Big screens menu -->
+        <div id="big-menu" >
+            <img src="../Images/Logo.svg" alt="Logo">
             <div>
                 <nav>
-                <ul>
-                    <li><a style="color: black;" href="#">Link 1</a></li>
-                    <li><a style="color: black;" href="#">Link 2</a></li>
-                    <li><a style="color: black;" href="#">Link 3</a></li>
-                    <li><a style="color: black;" href="#">Link 4</a></li>
-                    <li><a style="color: black;" href="#">Link 5</a></li>
-                </ul>
-            </nav>
+                    <ul>
+                        <li><a style="color: black;" href="#">Link 1</a></li>
+                        <li><a style="color: black;" href="#">Link 2</a></li>
+                        <li><a style="color: black;" href="#">Link 3</a></li>
+                        <li><a style="color: black;" href="#">Link 4</a></li>
+                        <li><a style="color: black;" href="#">Link 5</a></li>
+                    </ul>
+                </nav>
             </div>
-            <button>Action</button>
+            <button style="background-color: #000000; color: #ffffff;">Action</button>
 
         </div>
 
-        <!-- side bar -->
+        <!-- Small screens -->
+         <div id="small-menu">
+            <img src="../Images/Logo.svg" alt="Logo">
+            <!-- side bar -->
 
-        <input id="checkbox" type="checkbox" style="display: none;">
-        <label for="checkbox" id="checkbox-label" role="button" aria-label="toggle navigation bar"
-            aria-controls="side-bar" aria-expanded="false">
-            <img src="../Images/hamburger-icon.svg" alt="Hamburger-icon">
-        </label>
+            <input id="checkbox" type="checkbox" style="display: none;">
+            <label for="checkbox" id="checkbox-label" role="button" aria-label="toggle navigation bar"
+                aria-controls="side-bar" aria-expanded="false">
+                <img src="../Images/hamburger-icon.svg" alt="Hamburger-icon">
+            </label>
+            
+            <div id="side-bar" >
+                <input type="checkbox" id="checkbox-2" style="display: none;">
+                    <label style="position: absolute; left: 99%;" for="checkbox" id="checkbox-label-2" role="button" aria-label="Toggle mobil menu"
+                        aria-controls="mobile menu" aria-expanded="false">
+                        <i class="fa-solid fa-xmark" style="color: #000000; position: absolute; right: 48px; "></i>
+                    </label>
+                <nav>
+                    <ul>
+                        <li><a style="color: black;" href="#">Link 1</a></li>
+                        <li><a style="color: black;" href="#">Link 2</a></li>
+                        <li><a style="color: black;" href="#">Link 3</a></li>
+                        <li><a style="color: black;" href="#">Link 4</a></li>
+                        <li><a style="color: black;" href="#">Link 5</a></li>
+                    </ul>
+                </nav>
 
-        <div id="side-bar" >
-            <input type="checkbox" id="checkbox-2" style="display: none;">
-				<label style="position: absolute; left: 99%;" for="checkbox" id="checkbox-label-2" role="button" aria-label="Toggle mobil menu"
-					aria-controls="mobile menu" aria-expanded="false">
-					<i class="fa-solid fa-xmark" style="color: #000000; position: absolute; right: 48px; "></i>
-				</label>
-            <nav>
-                <ul>
-                    <li><a style="color: black;" href="#">Link 1</a></li>
-                    <li><a style="color: black;" href="#">Link 2</a></li>
-                    <li><a style="color: black;" href="#">Link 3</a></li>
-                    <li><a style="color: black;" href="#">Link 4</a></li>
-                    <li><a style="color: black;" href="#">Link 5</a></li>
-                </ul>
-            </nav>
-
+            </div>
         </div>
     </header>
       
@@ -217,8 +222,10 @@
                 <p>Eight</p>
             </div>
         </div>
+        <div id="form-div">
         <h4>Ask a Question</h4>
         <a href="/pages/Form.html"><i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></a>
+        </div>
         <!-- Form -->
     </footer>
 

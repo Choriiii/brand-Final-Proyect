@@ -34,11 +34,14 @@ h4{
 
 /*header config*/
 
-header{
+#small-menu{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 22px;
+}
+#big-menu{
+    display: none;
 }
 
 /*side bar config*/
@@ -250,6 +253,7 @@ footer p{
 #first-column{
     max-width: 99px;
 }
+
 /*Form config*/
 #Form{
     background-color: black;
@@ -309,4 +313,29 @@ footer p{
     grid-column: 2/4;
     grid-row: 10/12;
     cursor: pointer;
+}
+@media (min-width: 744px){
+    #small-menu{
+        display: none;
+    }
+    #big-menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 22px;
+    }
+    #big-menu li{
+        display: inline-block;
+        margin: 2vh;
+    }
+    #big-menu ul{
+        padding: 0;
+    }
+    #first-column{
+        max-width: none;
+    }
+    #footer-columns div{
+        width: 22%;
+    }
+    
 }
