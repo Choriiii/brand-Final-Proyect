@@ -7,21 +7,24 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <section id="Form">
+    <section id="Form" style="text-align: left;">
         <h1>Ask a Question</h1>
-        <div id="Name-div">
-            <input type="text" name="First-name" id="F-name" placeholder="First">
-            <input type="text" name="Last-name" id="L-name" placeholder="Last">
+        <div id="name-label">
             <label for="F-name">Name</label>
         </div>
-        <div id="Email-div">
-            <input type="email" name="mail" id="mail" placeholder="Example.1@gmail.com">
-            <label for="mail">Email</label>
+            <div id="name">
+            <input type="text" name="First-name" id="F-name" placeholder="First" style="width: 155px;">
+            <input type="text" name="Last-name" id="L-name" placeholder="Last" style="width: 155px;">
+            </div>
+        <div id="email-label">
+            <label for="mail" >Email</label>
         </div>
-        <div id="Message-div">
-            <input type="text" name="Message" id="Message" placeholder="...">
+            <input type="email" name="mail" id="mail" placeholder="Example.1@gmail.com">
+        <div id="message-label">
             <label for="Message">Type your message here</label>
         </div>
+            <textarea name="Message" name="Message" placeholder="..." rows="4" id="Message"></textarea>
+
         <button>Send</button>
     </section>
     
