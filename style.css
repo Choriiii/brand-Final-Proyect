@@ -50,12 +50,12 @@ h4{
     left: -300vh;
     background-color: white;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     text-decoration: none;
     transition: all 0.7s;
-    z-index: 200;
-    
+    z-index: 500;
 }
+
 #side-bar li{
     text-align: left;
     list-style: none;
@@ -69,9 +69,9 @@ h4{
 
 #back-to-top{
     background-color: white;
-    border-radius: 60px;
+    border-radius: 100px;
     z-index: 100;
-    padding: 8px 3px;
+    padding: 9px 4px;
     width: 40px;
     position: fixed;
     top: 80%;
@@ -90,6 +90,7 @@ h1{
     letter-spacing: -1px;
     margin-bottom: 24px;
     font-weight: 900;
+    
 }
 #section-1 p,
 #section-5 p{
@@ -235,6 +236,7 @@ h1{
   height: auto;
   border-radius: 8px;
   object-fit: cover;
+  aspect-ratio: 1 / 1;
   transition: transform 0.3s ease;
 }
 
@@ -268,7 +270,7 @@ footer p{
     flex-direction: column;
     margin-bottom: 8px;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 20px;
 }
 #first-column{
     max-width: 99px;
@@ -453,6 +455,10 @@ footer p{
     #section-1{
         flex-direction: row;
         margin-bottom: 64px;
+        min-height: 80vh;
+    }
+    #section-1 picture{
+        margin: auto;
     }
     #text-s-1{
         margin: auto 110px;
@@ -496,4 +502,34 @@ footer p{
     grid-template-columns: repeat(3, 1fr);
     }
 }
+
+/*animations*/
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.reviews {
+  animation: scaleIn 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.reviews:nth-child(1) { animation-delay: 0.2s; }
+.reviews:nth-child(2) { animation-delay: 0.4s; }
+.reviews:nth-child(3) { animation-delay: 0.6s; }
+.reviews:nth-child(4) { animation-delay: 0.8s; }
+.reviews:nth-child(5) { animation-delay: 1s; }
+
+
+
+
+
+
+
+
 

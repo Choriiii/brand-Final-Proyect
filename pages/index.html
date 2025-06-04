@@ -9,13 +9,12 @@
     <link rel="stylesheet" href="../style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
 <body>
-    <header>
+    <header class="animate__animated animate__rollIn">
         <!-- Big screens menu -->
-        <div id="big-menu" >
+        <div id="big-menu">
             <img src="../Images/Logo.svg" alt="Logo">
             <div>
                 <nav>
@@ -33,22 +32,22 @@
         </div>
 
         <!-- Small screens -->
-         <div id="small-menu">
+        <div id="small-menu">
             <img src="../Images/Logo.svg" alt="Logo">
             <!-- side bar -->
 
             <input id="checkbox" type="checkbox" style="display: none;">
-            <label for="checkbox" id="checkbox-label" role="button" aria-label="toggle navigation bar"
-                aria-controls="side-bar" aria-expanded="false">
+            <label for="checkbox" id="checkbox-label" aria-label="toggle navigation bar"
+                aria-controls="small-menu">
                 <img src="../Images/hamburger-icon.svg" alt="Hamburger-icon">
             </label>
-            
-            <div id="side-bar" >
+
+            <div id="side-bar">
                 <input type="checkbox" id="checkbox-2" style="display: none;">
-                    <label style="position: absolute; left: 99%;" for="checkbox" id="checkbox-label-2" role="button" aria-label="Toggle mobil menu"
-                        aria-controls="mobile menu" aria-expanded="false">
-                        <i class="fa-solid fa-xmark" style="color: #000000; position: absolute; right: 48px; "></i>
-                    </label>
+                <label style="position: absolute; left: 99%;" for="checkbox" id="checkbox-label-2"
+                    aria-label="Toggle mobil menu" aria-controls="small-menu">
+                    <i class="fa-solid fa-xmark" style="color: #000000; position: absolute; right: 48px; "></i>
+                </label>
                 <nav>
                     <ul>
                         <li><a style="color: black;" href="./404.html">Link 1</a></li>
@@ -62,24 +61,24 @@
             </div>
         </div>
     </header>
-      
+
 
 
     <main>
         <div id="back-to-top">
-        <a href="#">
-            <i class="fa-regular fa-circle-up fa-2xl" style="color: #000000;"></i>
-        </a>
+            <a href="#">
+                <i class="fa-regular fa-circle-up fa-2xl" style="color: #000000;"></i>
+            </a>
         </div>
         <section id="section-1">
             <div id="text-s-1">
                 <div id="s-1-div-1">
-                    <h1>Medium lenght display headline</h1>
+                    <h1 >Medium lenght display headline</h1>
                     <p>Separated they live in Bookmarks right at the coast at the famous Semantics, large language</p>
                 </div>
                 <div id="section-1-div">
                     <button style="background-color: #000000; color: white;">Action</button>
-                    <p style="font-size: 14px; font-weight: 600;">5,000 people like you have purchased this product!</p>
+                    <p style="font-size: 14px; font-weight: 600;"> <strong>5,000 people</strong> like you have purchased this product!</p>
                 </div>
             </div>
             <picture>
@@ -88,8 +87,8 @@
                 <source media="(min-width: 744px)" srcset="../Images/img-1-Tablet(S)-744px.svg">
                 <img src="../Images/img-1-mobil.svg" alt="Image 1 mobil">
             </picture>
-         </section>    
-    
+        </section>
+
 
         <section id="section-3">
             <div id="feature-container">
@@ -119,20 +118,21 @@
             <source media="(min-width: 1440px)" srcset="../Images/img-2-desktop.svg">
             <source media="(min-width: 1024px)" srcset="../Images/img-2-Tablet-1024px.svg">
             <source media="(min-width: 744px)" srcset="../Images/img-2-tablet-744px.svg">
-            <img src="../Images/img-2-mobil.svg" alt="img-2-mobil" >
+            <img src="../Images/img-2-mobil.svg" alt="img-2-mobil">
 
         </picture>
         <div id="text-s-4">
-            
+
             <h2>Long headlines on two lines to turn your visitors into users and achieve more</h2>
-                <div>
-                <p style=" margin-bottom: 17px;">Separated they live in Bookmarks right at the coast of the famous Semantics, large
+            <div>
+                <p style=" margin-bottom: 17px;">Separated they live in Bookmarks right at the coast of the famous
+                    Semantics, large
                     language ocean</p>
                 <ul>
-                    <li >Showcase and embed your work with</li>
-                    <li >Publish across social channels in a click</li>
-                    <li >Sell your videos worldwide</li>
-                    <li >Embed your work with</li>
+                    <li>Showcase and embed your work with</li>
+                    <li>Publish across social channels in a click</li>
+                    <li>Sell your videos worldwide</li>
+                    <li>Embed your work with</li>
                 </ul>
             </div>
         </div>
@@ -145,19 +145,8 @@
                 <img src="../Images/Profile.svg" alt="Profile photo">
                 <h4>Name Surname</h4>
                 <p>Description</p>
-                    <i  class="fa-brands fa-square-facebook icon-1" style="color: #000000;"></i>
-                    <i  class="fa-brands fa-twitter icon-2" style="color: #000000;"></i>
-            </div>
-        </div>
-
-       <div class="reviews">
-            <p>"A testimonial describing what the person thinks about this service product or startup in general</p>
-            <div class="Second-div">
-                <img src="../Images/Profile.svg" alt="Profile photo">
-                <h4>Name Surname</h4>
-                <p>Description</p>
-                    <i  class="fa-brands fa-square-facebook icon-1" style="color: #000000;"></i>
-                    <i  class="fa-brands fa-twitter icon-2" style="color: #000000;"></i>
+                <i class="fa-brands fa-square-facebook icon-1" style="color: #000000;"></i>
+                <i class="fa-brands fa-twitter icon-2" style="color: #000000;"></i>
             </div>
         </div>
 
@@ -167,8 +156,19 @@
                 <img src="../Images/Profile.svg" alt="Profile photo">
                 <h4>Name Surname</h4>
                 <p>Description</p>
-                    <i  class="fa-brands fa-square-facebook icon-1" style="color: #000000;"></i>
-                    <i  class="fa-brands fa-twitter icon-2" style="color: #000000;"></i>
+                <i class="fa-brands fa-square-facebook icon-1" style="color: #000000;"></i>
+                <i class="fa-brands fa-twitter icon-2" style="color: #000000;"></i>
+            </div>
+        </div>
+
+        <div class="reviews">
+            <p>"A testimonial describing what the person thinks about this service product or startup in general</p>
+            <div class="Second-div">
+                <img src="../Images/Profile.svg" alt="Profile photo">
+                <h4>Name Surname</h4>
+                <p>Description</p>
+                <i class="fa-brands fa-square-facebook icon-1" style="color: #000000;"></i>
+                <i class="fa-brands fa-twitter icon-2" style="color: #000000;"></i>
             </div>
         </div>
 
@@ -179,20 +179,20 @@
                 <img src="../Images/Profile.svg" alt="Profile photo">
                 <h4>Name Surname</h4>
                 <p>Description</p>
-                    <i  class="fa-brands fa-square-facebook icon-1" style="color: #000000;"></i>
-                    <i  class="fa-brands fa-twitter icon-2" style="color: #000000;"></i>
+                <i class="fa-brands fa-square-facebook icon-1" style="color: #000000;"></i>
+                <i class="fa-brands fa-twitter icon-2" style="color: #000000;"></i>
             </div>
         </div>
 
-       
+
         <div class="reviews">
             <p>"A testimonial describing what the person thinks about this service product or startup in general</p>
             <div class="Second-div">
                 <img src="../Images/Profile.svg" alt="Profile photo">
                 <h4>Name Surname</h4>
                 <p>Description</p>
-                    <i  class="fa-brands fa-square-facebook icon-1" style="color: #000000;"></i>
-                    <i  class="fa-brands fa-twitter icon-2" style="color: #000000;"></i>
+                <i class="fa-brands fa-square-facebook icon-1" style="color: #000000;"></i>
+                <i class="fa-brands fa-twitter icon-2" style="color: #000000;"></i>
             </div>
         </div>
     </section>
@@ -203,18 +203,18 @@
             <button style="background-color: antiquewhite; font-weight: bold;">Action</button>
         </div>
     </section>
-    <section id="section-7">
-        <img src="../Images/gallery-img-1.svg" alt="Gallery-1">
-        <img src="../Images/gallery-img-2.svg" alt="Gallery-2">
-        <img src="../Images/gallery-img-3.svg" alt="Gallery-3">
-        <img src="../Images/gallery-img-4.svg" alt="Gallery-4">
-        <img src="../Images/gallery-img-5.svg" alt="Gallery-5">
-        <img src="../Images/gallery-img-6.jpg" alt="Gallery-6">
-        
-    </section>
+    <div id="section-7">
+        <img src="../Images/gallery-img-1.svg" alt="Gallery-1" loading="lazy">
+        <img src="../Images/gallery-img-2.svg" alt="Gallery-2" loading="lazy">
+        <img src="../Images/gallery-img-3.svg" alt="Gallery-3" loading="lazy">
+        <img src="../Images/gallery-img-4.svg" alt="Gallery-4" loading="lazy">
+        <img src="../Images/gallery-img-5.svg" alt="Gallery-5" loading="lazy">
+        <img src="../Images/gallery-img-6.webp" alt="Gallery-6" loading="lazy">
+
+    </div>
 
     <footer>
-        <img src="../Images/Logo (White).svg" alt="White logo">
+        <img src="../Images/Logo-(White).svg" alt="White logo">
         <div id="footer-columns">
             <div>
                 <h4 id="first-column">First column</h4>
@@ -237,8 +237,8 @@
             </div>
         </div>
         <div id="form-div">
-        <h4>Ask a Question</h4>
-        <a href="/pages/Form.html"><i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></a>
+            <h4>Ask a Question</h4>
+            <a href="/pages/Form.html"><i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></a>
         </div>
         <!-- Form -->
     </footer>
