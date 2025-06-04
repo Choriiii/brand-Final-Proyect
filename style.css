@@ -220,7 +220,27 @@ h1{
     line-height: 48px;
     margin-bottom: 12px;
 }
+/* section 7 config */
+#section-7 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
+#section-7 img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+#section-7 img:hover {
+  transform: scale(1.05);
+}
 /*footer config*/
 
 footer{
@@ -253,6 +273,54 @@ footer p{
 #first-column{
     max-width: 99px;
 }
+/*FAQ config*/
+.faq {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.faq h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.faq-item summary {
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: black;
+  list-style: none;
+  position: relative;
+  padding-right: 20px;
+}
+.faq-item summary::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  font-size: 1.2rem;
+}
+
+.faq-item[open] summary::after {
+  content: "−";
+}
+
+.faq-item p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+}
+
 
 /*Form config*/
 #Form{
@@ -267,6 +335,7 @@ footer p{
     row-gap: 15px;
     padding: 25px;
     text-align: left;
+    margin: auto;
 }
 #Form div,
 #Form input,
@@ -338,6 +407,9 @@ footer p{
     #footer-columns div{
         width: 22%;
     }
+    #section-7{
+    grid-template-columns: repeat(2, 1fr);
+    }
     
 }
 /* Tablets responsive styles */
@@ -376,6 +448,7 @@ footer p{
         width: 415px;
     }
 }
+/*descktops respondive desing*/
 @media (min-width: 1440px){
     #section-1{
         flex-direction: row;
@@ -419,5 +492,8 @@ footer p{
     #text-s-4 h2{
         width: 504px;
     }
-
+    #section-7{
+    grid-template-columns: repeat(3, 1fr);
+    }
 }
+
